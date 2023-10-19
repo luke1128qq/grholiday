@@ -17,6 +17,7 @@ export default function Home() {
             </Head>
             <Dashboard />
 
+            {/* bootstrap輪播牆 */}
             <Carousel className={`${styles.carousel}`}>
                 {carouselList.map((v, i) => {
                     return (
