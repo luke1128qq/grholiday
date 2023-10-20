@@ -22,7 +22,7 @@ export default function Dashboard() {
     ];
     return (
         <>
-            <div className="d-flex w-100" style={{ height: "350px" }}>
+            <div className="d-flex w-100" style={{ height: "100px" }}>
                 <div className={styles.dashboard}>
                     {option.map((v, i) => {
                         return <Dropdown title={v.title} key={`option-${i}`} />;

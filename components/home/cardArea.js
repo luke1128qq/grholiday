@@ -28,17 +28,27 @@ export default function CardArea() {
         },
     ];
     return (
-        <>
+        <div className="d-flex row justify-content-center">
             {cardList.map((v, i) => {
                 return (
-                    <div className="card" style={{ width: "18rem" }} key={i}>
-                        <img src={v.src} className="card-img-top" alt="..." />
-                        <div className="card-body">
-                            <p className="card-text">{v.alt}</p>
+                    <>
+                        <div
+                            className="card col-3 mx-3 my-3"
+                            // style={{ width: "18rem" }}
+                            key={i}
+                        >
+                            <img
+                                src={v.src}
+                                className="card-img-top"
+                                alt="..."
+                            />
+                            <div className="card-body">
+                                <p className="card-text">{v.alt}</p>
+                            </div>
                         </div>
-                    </div>
+                    </>
                 );
             })}{" "}
-        </>
+        </div>
     );
 }

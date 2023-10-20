@@ -15,12 +15,11 @@ export default function Home() {
             <Carousel1 />
 
             <div className="container">
-                <div>2023優惠行程</div>
-                <div className="d-flex">
-                    <CardArea />
-                </div>
-                <div>23</div>
+                <CardArea />
             </div>
+            <div>2023優惠行程</div>
+            <div className="d-flex"></div>
+            <div>23</div>
         </>
     );
 }
