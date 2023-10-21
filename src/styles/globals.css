@@ -1,5 +1,7 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
 
+@import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400&display=swap');
+
 html {
     height: 100%;
 }
@@ -14,6 +16,8 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    font-family: 'Zen Maru Gothic', serif;
+    letter-spacing: 1px;
 }
 
 * {
