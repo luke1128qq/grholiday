@@ -1,0 +1,14 @@
+.serviceArea {
+    margin-top: 50px;
+    margin-inline: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@media (max-width: 1200px) {
+    .serviceArea {
+        flex-direction: column;
+        gap: 50px;
+    }
+}

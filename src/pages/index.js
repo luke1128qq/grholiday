@@ -47,6 +47,12 @@ export default function Home() {
         },
     ];
 
+    const serviceList = [
+        { title: "專人代訂機票", src: "/traveling/service01.jpg" },
+        { title: "快速申辦台胞證", src: "/traveling/service02.jpg" },
+        { title: "客製化尊榮行程", src: "/traveling/service03.jpg" },
+    ];
+
     return (
         <>
             <Head>
@@ -61,7 +67,7 @@ export default function Home() {
                 inline={"2023精選特賣會,獨家安排意想不到的專屬行程"}
             />
 
-            <div className={`container ${styles.cardArea}`}>
+            <div className="container">
                 <div className="d-flex row justify-content-center">
                     {cardList.map((v, i) => {
                         return (
@@ -73,10 +79,20 @@ export default function Home() {
 
             <AreaTitle
                 icon={"airplane"}
-                title={"機票簽證服務"}
-                inline={"資深旅遊從業人員為您提供專業且親切的服務"}
+                title={"票券簽證服務"}
+                inline={"資深旅遊從業人員幫您解決各項疑難雜症"}
             />
-            <Service />
+            <div className={styles.serviceArea}>
+                {serviceList.map((v, i) => {
+                    return (
+                        <Service
+                            title={v.title}
+                            src={v.src}
+                            key={`service${i}`}
+                        />
+                    );
+                })}
+            </div>
 
             <Footer />
         </>
