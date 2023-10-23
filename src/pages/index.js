@@ -11,13 +11,14 @@ import React, { useState, useEffect } from "react";
 export default function Home() {
     const [FS, setFS] = useState(28);
 
-    const changeFontSize = () => {
-        setFS((prev) => (prev == 28 ? 36 : 28));
-        setTimeout(changeFontSize, 1000);
+    const changeSize = () => {
+        setInterval(() => {
+            setFS((prev) => (prev == 28 ? 32 : 28));
+        }, 1500);
     };
 
     useEffect(() => {
-        changeFontSize();
+        changeSize();
     }, []);
 
     return (
