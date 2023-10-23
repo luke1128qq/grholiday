@@ -1,0 +1,28 @@
+.card {
+    width: 350px;
+    height: 400px;
+    padding: 0px;
+    overflow: hidden;
+    cursor: pointer;
+    border: none;
+    box-shadow: 3px 3px 3px rgb(160, 160, 160);
+}
+
+.cardImg {
+    height: 70%;
+    object-fit: cover;
+}
+
+.card :hover {
+    transform: scale(1.05);
+}
+
+.cardText {
+    background-color: #f1ebeb;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    font-weight: 600;
+}

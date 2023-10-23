@@ -13,12 +13,16 @@
     height: 100%;
     display: flex;
     align-items: center;
-    margin-right: 80px;
+    margin-right: 120px;
 }
 
 .titleImg {
     object-fit: cover;
     width: 250px;
+}
+
+.navBox {
+    flex-grow: 0;
 }
 
 .nav {
@@ -27,7 +31,7 @@
 
 .choice {
     align-items: center;
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 600;
     color: rgb(136, 118, 96) !important;
 }
@@ -38,7 +42,7 @@
     }
 
     .choice {
-        font-size: 22px;
+        font-size: 18px;
     }
 }
 
@@ -48,7 +52,7 @@
     }
 
     .choice {
-        font-size: 18px;
+        font-size: 16px;
     }
 }
 

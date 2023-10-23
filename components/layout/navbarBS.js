@@ -6,18 +6,21 @@ import styles from "@/styles/layout/navbarBS.module.css";
 
 export default function NavbarBS() {
     return (
-        <Navbar expand="lg" className="bg-body-tertiary">
+        <Navbar expand="lg" className="">
             <Container className={styles.container}>
                 <Navbar.Brand href="/" className={styles.title}>
                     <img
-                        src="/travelImg/title2.png"
+                        src="/traveling/title2.png"
                         alt="title"
                         className={styles.titleImg}
                     ></img>
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basi  c-navbar-nav" />
 
-                <Navbar.Collapse id="basic-navbar-nav">
+                <Navbar.Collapse
+                    id="basic-navbar-nav"
+                    className={styles.navBox}
+                >
                     <Nav className={styles.nav}>
                         <NavDropdown
                             title="海外旅遊"

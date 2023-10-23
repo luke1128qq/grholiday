@@ -1,0 +1,11 @@
+.cardTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    font-size: 36px;
+    font-weight: 600;
+    margin-top: 20px;
+    gap: 20px;
+}
+

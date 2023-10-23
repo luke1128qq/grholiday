@@ -5,15 +5,15 @@ import styles from "@/styles/home/carousel1.module.css";
 export default function Carousel1() {
     const carouselList = [
         {
-            src: "/travelImg/japan01.jpg",
+            src: "/traveling/japan01.jpg",
             alt: "slide",
         },
         {
-            src: "/travelImg/japan02.jpg",
+            src: "/traveling/japan02.jpg",
             alt: "slide",
         },
         {
-            src: "/travelImg/japan03.jpg",
+            src: "/traveling/japan03.jpg",
             alt: "slide",
         },
     ];
