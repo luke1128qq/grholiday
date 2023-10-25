@@ -19,7 +19,7 @@ export default function Carousel1() {
     ];
     return (
         <>
-            <Carousel className={`${styles.carousel}`}>
+            <Carousel className={styles.carousel}>
                 {carouselList.map((v, i) => {
                     return (
                         <Carousel.Item key={i}>

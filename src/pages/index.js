@@ -80,7 +80,7 @@ export default function Home() {
             <AreaTitle
                 icon={"airplane"}
                 title={"票券簽證服務"}
-                inline={"資深旅遊從業人員幫您解決各項疑難雜症"}
+                inline={"在國際情勢與兩岸關係不停變動之際為您整理好最新資訊"}
             />
             <div className={styles.serviceArea}>
                 {serviceList.map((v, i) => {
@@ -93,6 +93,12 @@ export default function Home() {
                     );
                 })}
             </div>
+
+            <AreaTitle
+                icon={"people"}
+                title={"值得您信賴的好夥伴"}
+                inline={"資深旅遊從業人員幫您解決各項疑難雜症"}
+            />
 
             <Footer />
         </>

@@ -1,9 +1,10 @@
 .serviceArea {
+    margin: auto;
     margin-top: 50px;
-    margin-inline: 100px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    width: 80%;
 }
 
 @media (max-width: 1200px) {
