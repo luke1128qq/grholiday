@@ -3,11 +3,10 @@ import styles from "@/styles/home/service.module.css";
 
 export default function Service({ title, src }) {
     return (
-        <div>
-            <div>{title}</div>
-            <div className={styles.circle}>
-                <img src={src} ale="image" className={styles.img} />
+        <div className={styles.box}>
+            <div className={styles.circle} style={{ backgroundImage: `url(${src})` }}>
             </div>
+            <div className={styles.text}>{title}</div>
         </div>
     );
 }
