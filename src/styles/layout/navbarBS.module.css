@@ -3,10 +3,7 @@
 }
 
 .navbar {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    background-color: #fff;
 }
 
 .title {
@@ -47,6 +44,11 @@
 }
 
 @media (max-width: 1200px) {
+    /* .navbar {
+        position: relative;
+        z-index: 0;
+    } */
+
     .nav {
         gap: 10px;
     }

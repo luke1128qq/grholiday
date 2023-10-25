@@ -4,8 +4,6 @@ import { ImAirplane } from "react-icons/im";
 import styles from "@/styles/home/home.module.css";
 import Image from "next/image";
 import Head from "next/head";
-import NavbarBS from "../../components/layout/navbarBS";
-import Footer from "../../components/layout/footer";
 import Carousel1 from "../../components/home/carousel1";
 import Card from "../../components/home/card";
 import Service from "../../components/home/service";
@@ -58,7 +56,6 @@ export default function Home() {
             <Head>
                 <title>川流旅行社</title>
             </Head>
-            <NavbarBS />
             <Carousel1 />
 
             <AreaTitle
@@ -99,8 +96,6 @@ export default function Home() {
                 title={"值得您信賴的好夥伴"}
                 inline={"資深旅遊從業人員幫您解決各項疑難雜症"}
             />
-
-            <Footer />
         </>
     );
 }

@@ -6,7 +6,7 @@ import styles from "@/styles/layout/navbarBS.module.css";
 
 export default function NavbarBS() {
     return (
-        <Navbar expand="lg" className="">
+        <Navbar expand="lg" className={styles.navbar}>
             <Container className={styles.container}>
                 <Navbar.Brand href="/" className={styles.title}>
                     <img
