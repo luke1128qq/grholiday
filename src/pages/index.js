@@ -1,6 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { BsCarFrontFill } from "react-icons/bs";
-import { ImAirplane } from "react-icons/im";
 import styles from "@/styles/home/home.module.css";
 import Image from "next/image";
 import Head from "next/head";
@@ -8,6 +6,7 @@ import Carousel1 from "../../components/home/carousel1";
 import Card from "../../components/home/card";
 import Service from "../../components/home/service";
 import AreaTitle from "../../components/home/areaTitle";
+import PhotoArea from "../../components/home/photoArea";
 
 export default function Home() {
     const cardList = [
@@ -96,6 +95,8 @@ export default function Home() {
                 title={"值得您信賴的好夥伴"}
                 inline={"資深旅遊從業人員幫您解決各項疑難雜症"}
             />
+
+            <PhotoArea />
         </>
     );
 }
