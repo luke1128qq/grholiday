@@ -18,7 +18,7 @@ export default function Footer() {
             </div>
 
             <div className={styles.line}>
-                <div className=" my-auto">Line@：@ojk7760f</div>
+                <div className=" my-auto p-2">Line@：@ojk7760f</div>
                 <img src="/traveling/line.jpg" alt="image" />
             </div>
         </div>
