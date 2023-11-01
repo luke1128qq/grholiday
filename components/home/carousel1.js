@@ -22,7 +22,7 @@ export default function Carousel1() {
             <Carousel className={styles.carousel} fade>
                 {carouselList.map((v, i) => {
                     return (
-                        <Carousel.Item key={i}>
+                        <Carousel.Item key={`carouse${i}`}>
                             <img src={v.src} alt={v.alt} />
                             <div className={styles.carouselTextBox}>
                                 <div className={styles.carouselTitle}>
