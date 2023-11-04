@@ -13,13 +13,35 @@ export default function PhotoArea() {
         { src: "/traveling/man01.jpg", text: "好棒好棒好棒" },
         { src: "/traveling/man01.jpg", text: "好棒好棒好棒" },
         { src: "/traveling/man01.jpg", text: "好棒好棒好棒" },
+        { src: "/traveling/man01.jpg", text: "好棒好棒好棒" },
+        { src: "/traveling/man01.jpg", text: "好棒好棒好棒" },
+        { src: "/traveling/man01.jpg", text: "好棒好棒好棒" },
+        { src: "/traveling/man01.jpg", text: "好棒好棒好棒" },
+        { src: "/traveling/man01.jpg", text: "好棒好棒好棒" },
+        { src: "/traveling/man01.jpg", text: "好棒好棒好棒" },
+        { src: "/traveling/man01.jpg", text: "好棒好棒好棒" },
+        { src: "/traveling/man01.jpg", text: "好棒好棒好棒" },
+        { src: "/traveling/man01.jpg", text: "好棒好棒好棒" },
+        { src: "/traveling/man01.jpg", text: "好棒好棒好棒" },
     ];
+
+    const [ishover, setIshover] = useState(true);
+
     return (
         <div className={styles.photoArea}>
-            <div className={styles.photoBox}>
+            <div className={ishover ? styles.photoBox : styles.photoBox2}>
                 {photoList.map((v, i) => {
                     return (
-                        <div className={styles.card} key={`photo${i}`}>
+                        <div
+                            className={styles.card}
+                            key={`photo${i}`}
+                            onMouseEnter={() => {
+                                setIshover(false);
+                            }}
+                            onMouseLeave={() => {
+                                setIshover(true);
+                            }}
+                        >
                             <div className={styles.cardImg}>
                                 <img src={v.src} alt="image" />
                             </div>

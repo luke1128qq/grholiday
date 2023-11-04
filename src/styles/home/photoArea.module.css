@@ -1,6 +1,6 @@
 .photoArea {
     margin: auto;
-    margin-top: 20px;
+    margin-top: 50px;
     width: 80%;
     height: 600px;
     background-image: url("/traveling/ph01.jpg");
@@ -12,6 +12,7 @@
     align-items: center;
     overflow: hidden;
     position: relative;
+    box-shadow: inset 0px 3px 10px rgb(134, 134, 134);
 }
 
 .photoBox {
@@ -19,12 +20,17 @@
     position: absolute;
     left: 50px;
     gap: 150px;
-    animation: moveLeft 60s linear infinite;
+    animation: moveLeft 120s linear infinite;
 }
 
-/* .photoBox:hover {
+.photoBox2 {
+    display: flex;
+    position: absolute;
+    left: 50px;
+    gap: 150px;
+    animation: moveLeft 120s linear infinite;
     animation-play-state: paused;
-} */
+}
 
 @keyframes moveLeft {
     0% {

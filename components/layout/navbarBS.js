@@ -3,8 +3,11 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import styles from "@/styles/layout/navbarBS.module.css";
+import { useRouter } from "next/router";
 
 export default function NavbarBS() {
+    const router = useRouter();
+
     return (
         <Navbar expand="lg" className={styles.navbar}>
             <Container className={styles.container}>
@@ -23,53 +26,125 @@ export default function NavbarBS() {
                 >
                     <Nav className={styles.nav}>
                         <NavDropdown
-                            title="海外旅遊"
+                            title="東北亞"
                             id="basic-nav-dropdown"
                             className={styles.choice}
                         >
                             <NavDropdown.Item
-                                href="#action/3.1"
-                                className={styles.Item}
+                                onClick={() => {
+                                    router.push("japan");
+                                }}
+                                className={styles.item}
                             >
-                                Action
+                                日本
                             </NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.2">
-                                Another action
+                            <NavDropdown.Item
+                                onClick={() => {
+                                    router.push("/korean");
+                                }}
+                                className={styles.item}
+                            >
+                                韓國
                             </NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.3">
-                                Something
-                            </NavDropdown.Item>
-                            <NavDropdown.Divider />
-                            <NavDropdown.Item href="#action/3.4">
-                                Separated link
+                            <NavDropdown.Item
+                                onClick={() => {
+                                    router.push("/china");
+                                }}
+                                className={styles.item}
+                            >
+                                中國
                             </NavDropdown.Item>
                         </NavDropdown>
                         <NavDropdown
-                            title="國內旅遊"
+                            title="東南亞"
                             id="basic-nav-dropdown"
                             className={styles.choice}
                         >
-                            <NavDropdown.Item href="#action/3.1">
-                                Action
+                            <NavDropdown.Item
+                                onClick={() => {
+                                    router.push("/tai");
+                                }}
+                                className={styles.item}
+                            >
+                                泰國
                             </NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.2">
-                                Another action
+                            <NavDropdown.Item
+                                onClick={() => {
+                                    router.push("/vie");
+                                }}
+                                className={styles.item}
+                            >
+                                越南
                             </NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.3">
-                                Something
-                            </NavDropdown.Item>
-                            <NavDropdown.Divider />
-                            <NavDropdown.Item href="#action/3.4">
-                                Separated link
+                            <NavDropdown.Item
+                                onClick={() => {
+                                    router.push("/phi");
+                                }}
+                                className={styles.item}
+                            >
+                                菲律賓
                             </NavDropdown.Item>
                         </NavDropdown>
-                        <Nav.Link href="#home" className={styles.choice}>
+                        <NavDropdown
+                            title="歐美紐澳"
+                            id="basic-nav-dropdown"
+                            className={styles.choice}
+                        >
+                            <NavDropdown.Item
+                                onClick={() => {
+                                    router.push("/usa");
+                                }}
+                                className={styles.item}
+                            >
+                                美國
+                            </NavDropdown.Item>
+                            <NavDropdown.Item
+                                onClick={() => {
+                                    router.push("/eu");
+                                }}
+                                className={styles.item}
+                            >
+                                歐洲
+                            </NavDropdown.Item>
+                            <NavDropdown.Item
+                                onClick={() => {
+                                    router.push("/aus");
+                                }}
+                                className={styles.item}
+                            >
+                                紐澳
+                            </NavDropdown.Item>
+                        </NavDropdown>
+                        <Nav.Link
+                            onClick={() => {
+                                router.push("/others/taiwan");
+                            }}
+                            className={styles.choice}
+                        >
+                            國內旅遊
+                        </Nav.Link>
+                        <Nav.Link
+                            onClick={() => {
+                                router.push("/others/ticket");
+                            }}
+                            className={styles.choice}
+                        >
                             航空訂票
                         </Nav.Link>
-                        <Nav.Link href="#link" className={styles.choice}>
+                        <Nav.Link
+                            onClick={() => {
+                                router.push("/others/daibao");
+                            }}
+                            className={styles.choice}
+                        >
                             代辦台胞證
                         </Nav.Link>
-                        <Nav.Link href="#link" className={styles.choice}>
+                        <Nav.Link
+                            onClick={() => {
+                                router.push("/others/free");
+                            }}
+                            className={styles.choice}
+                        >
                             自由行專區
                         </Nav.Link>
                     </Nav>
