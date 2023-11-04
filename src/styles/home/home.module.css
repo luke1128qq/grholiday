@@ -13,3 +13,27 @@
         gap: 50px;
     }
 }
+
+.middleArea {
+    width: 100%;
+    background-color: #fdfaf4;
+    background-image: url("/traveling/bg03.png");
+    background-repeat: no-repeat;
+    animation: moveRight 20s linear infinite;
+    transition: background-position 3s ease-in-out;
+    padding-bottom: 30px;
+}
+
+@keyframes moveRight {
+    0% {
+        background-position: -500%;
+    }
+    100% {
+        background-position: 1000%;
+    }
+}
+
+.buttomArea{
+    background-color: #fdfaf4;
+    padding-bottom: 60px;
+}

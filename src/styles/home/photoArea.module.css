@@ -1,7 +1,7 @@
 .photoArea {
     margin: auto;
     margin-top: 20px;
-    width: 90%;
+    width: 80%;
     height: 600px;
     background-image: url("/traveling/ph01.jpg");
     background-size: cover;
@@ -18,13 +18,13 @@
     display: flex;
     position: absolute;
     left: 50px;
-    gap: 100px;
+    gap: 150px;
     animation: moveLeft 60s linear infinite;
 }
 
-.photoBox:hover {
+/* .photoBox:hover {
     animation-play-state: paused;
-}
+} */
 
 @keyframes moveLeft {
     0% {
@@ -46,10 +46,11 @@
     font-weight: 500;
     background-color: #c4c4c4;
     cursor: pointer;
+    box-shadow: 2px 2px 5px rgb(74, 74, 74);
 }
 
 .card:hover {
-    transform: scale(1.05);
+    transform: scale(1.1);
 }
 
 .cardImg {

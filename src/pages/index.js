@@ -57,27 +57,33 @@ export default function Home() {
             </Head>
             <Carousel1 />
 
-            <AreaTitle
-                icon={"car"}
-                title={"熱門行程推薦"}
-                inline={"2023精選特賣會,獨家安排意想不到的專屬行程"}
-            />
+            <div className={styles.middleArea}>
+                <AreaTitle
+                    icon={"car"}
+                    title={"熱門行程推薦"}
+                    inline={"2023精選特賣會,獨家安排意想不到的專屬行程"}
+                />
 
-            <div className="container">
-                <div className="d-flex row justify-content-center">
-                    {cardList.map((v, i) => {
-                        return (
-                            <Card src={v.src} alt={v.alt} key={`card${i}`} />
-                        );
-                    })}
+                <div className="container">
+                    <div className="d-flex row justify-content-center">
+                        {cardList.map((v, i) => {
+                            return (
+                                <Card
+                                    src={v.src}
+                                    alt={v.alt}
+                                    key={`card${i}`}
+                                />
+                            );
+                        })}
+                    </div>
                 </div>
             </div>
-
             <AreaTitle
                 icon={"airplane"}
                 title={"票券簽證服務"}
                 inline={"在國際情勢與兩岸關係不停變動之際為您整理好最新資訊"}
             />
+
             <div className={styles.serviceArea}>
                 {serviceList.map((v, i) => {
                     return (
@@ -90,13 +96,14 @@ export default function Home() {
                 })}
             </div>
 
-            <AreaTitle
-                icon={"people"}
-                title={"值得您信賴的好夥伴"}
-                inline={"資深旅遊從業人員幫您解決各項疑難雜症"}
-            />
-
-            <PhotoArea />
+            <div className={styles.buttomArea}>
+                <AreaTitle
+                    icon={"people"}
+                    title={"值得您信賴的好夥伴"}
+                    inline={"資深旅遊從業人員幫您解決各項疑難雜症"}
+                />
+                <PhotoArea />
+            </div>
         </>
     );
 }
