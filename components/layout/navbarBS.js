@@ -32,7 +32,7 @@ export default function NavbarBS() {
                         >
                             <NavDropdown.Item
                                 onClick={() => {
-                                    router.push("japan");
+                                    router.push("/northEastAsia/japan");
                                 }}
                                 className={styles.item}
                             >
@@ -40,7 +40,7 @@ export default function NavbarBS() {
                             </NavDropdown.Item>
                             <NavDropdown.Item
                                 onClick={() => {
-                                    router.push("/korean");
+                                    router.push("/northEastAsia/korean");
                                 }}
                                 className={styles.item}
                             >
@@ -48,7 +48,7 @@ export default function NavbarBS() {
                             </NavDropdown.Item>
                             <NavDropdown.Item
                                 onClick={() => {
-                                    router.push("/china");
+                                    router.push("/northEastAsia/china");
                                 }}
                                 className={styles.item}
                             >
@@ -62,7 +62,7 @@ export default function NavbarBS() {
                         >
                             <NavDropdown.Item
                                 onClick={() => {
-                                    router.push("/tai");
+                                    router.push("/southEastAsia/tai");
                                 }}
                                 className={styles.item}
                             >
@@ -70,7 +70,7 @@ export default function NavbarBS() {
                             </NavDropdown.Item>
                             <NavDropdown.Item
                                 onClick={() => {
-                                    router.push("/vie");
+                                    router.push("/southEastAsia/vie");
                                 }}
                                 className={styles.item}
                             >
@@ -78,7 +78,7 @@ export default function NavbarBS() {
                             </NavDropdown.Item>
                             <NavDropdown.Item
                                 onClick={() => {
-                                    router.push("/phi");
+                                    router.push("/southEastAsia/phi");
                                 }}
                                 className={styles.item}
                             >
@@ -92,7 +92,7 @@ export default function NavbarBS() {
                         >
                             <NavDropdown.Item
                                 onClick={() => {
-                                    router.push("/usa");
+                                    router.push("/westCountry/usa");
                                 }}
                                 className={styles.item}
                             >
@@ -100,7 +100,7 @@ export default function NavbarBS() {
                             </NavDropdown.Item>
                             <NavDropdown.Item
                                 onClick={() => {
-                                    router.push("/eu");
+                                    router.push("/westCountry/eu");
                                 }}
                                 className={styles.item}
                             >
@@ -108,7 +108,7 @@ export default function NavbarBS() {
                             </NavDropdown.Item>
                             <NavDropdown.Item
                                 onClick={() => {
-                                    router.push("/aus");
+                                    router.push("/westCountry/aus");
                                 }}
                                 className={styles.item}
                             >
