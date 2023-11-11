@@ -9,6 +9,33 @@ import AreaTitle from "../../components/home/areaTitle";
 import PhotoArea from "../../components/home/photoArea";
 
 export default function Home() {
+    const [showTop, setShowTop] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY > 500) {
+                setShowTop(true);
+            } else {
+                setShowTop(false);
+            }
+        };
+
+        // 添加滾動事件監聽器
+        window.addEventListener("scroll", handleScroll);
+
+        // 清理滾動事件監聽器，以避免記憶體洩漏
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
+
+    const returnToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth", // 可以選擇平滑捲動效果
+        });
+    };
+
     const cardList = [
         {
             src: "/traveling/card1.jpg",
@@ -104,6 +131,17 @@ export default function Home() {
                 />
                 <PhotoArea />
             </div>
+            {showTop && (
+                <div
+                    className={styles.goTop}
+                    onClick={() => {
+                        returnToTop();
+                    }}
+                >
+                    <p>△</p>
+                    <p>Top</p>
+                </div>
+            )}
         </>
     );
 }

@@ -13,6 +13,7 @@
     overflow: hidden;
     position: relative;
     box-shadow: inset 0px 3px 10px rgb(134, 134, 134);
+    font-size: 20px;
 }
 
 .photoBox {
