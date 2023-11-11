@@ -3,6 +3,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import styles from "@/styles/layout/navbarBS.module.css";
+import Link from "next/link";
 import { useRouter } from "next/router";
 
 export default function NavbarBS() {
@@ -31,26 +32,26 @@ export default function NavbarBS() {
                             className={styles.choice}
                         >
                             <NavDropdown.Item
-                                onClick={() => {
-                                    router.push("/northEastAsia/japan");
-                                }}
                                 className={styles.item}
+                                onClick={() =>
+                                    router.push("/[search]", "/Japan")
+                                }
                             >
                                 日本
                             </NavDropdown.Item>
                             <NavDropdown.Item
-                                onClick={() => {
-                                    router.push("/northEastAsia/korean");
-                                }}
                                 className={styles.item}
+                                onClick={() =>
+                                    router.push("/[search]", "/Korean")
+                                }
                             >
                                 韓國
                             </NavDropdown.Item>
                             <NavDropdown.Item
-                                onClick={() => {
-                                    router.push("/northEastAsia/china");
-                                }}
                                 className={styles.item}
+                                onClick={() =>
+                                    router.push("/[search]", "/China")
+                                }
                             >
                                 中國
                             </NavDropdown.Item>
@@ -61,28 +62,36 @@ export default function NavbarBS() {
                             className={styles.choice}
                         >
                             <NavDropdown.Item
-                                onClick={() => {
-                                    router.push("/southEastAsia/tai");
-                                }}
                                 className={styles.item}
+                                onClick={() =>
+                                    router.push("/[search]", "/Thailand")
+                                }
                             >
                                 泰國
                             </NavDropdown.Item>
                             <NavDropdown.Item
-                                onClick={() => {
-                                    router.push("/southEastAsia/vie");
-                                }}
                                 className={styles.item}
+                                onClick={() =>
+                                    router.push("/[search]", "/Vietnam")
+                                }
                             >
                                 越南
                             </NavDropdown.Item>
                             <NavDropdown.Item
-                                onClick={() => {
-                                    router.push("/southEastAsia/phi");
-                                }}
                                 className={styles.item}
+                                onClick={() =>
+                                    router.push("/[search]", "/Philippines")
+                                }
                             >
                                 菲律賓
+                            </NavDropdown.Item>
+                            <NavDropdown.Item
+                                className={styles.item}
+                                onClick={() =>
+                                    router.push("/[search]", "/Indonesia")
+                                }
+                            >
+                                印尼
                             </NavDropdown.Item>
                         </NavDropdown>
                         <NavDropdown
@@ -91,33 +100,36 @@ export default function NavbarBS() {
                             className={styles.choice}
                         >
                             <NavDropdown.Item
-                                onClick={() => {
-                                    router.push("/westCountry/usa");
-                                }}
                                 className={styles.item}
+                                onClick={() =>
+                                    router.push("/[search]", "/America")
+                                }
                             >
                                 美國
                             </NavDropdown.Item>
                             <NavDropdown.Item
-                                onClick={() => {
-                                    router.push("/westCountry/eu");
-                                }}
                                 className={styles.item}
+                                onClick={() =>
+                                    router.push("/[search]", "/Europe")
+                                }
                             >
                                 歐洲
                             </NavDropdown.Item>
                             <NavDropdown.Item
-                                onClick={() => {
-                                    router.push("/westCountry/aus");
-                                }}
                                 className={styles.item}
+                                onClick={() =>
+                                    router.push(
+                                        "/[search]",
+                                        "/NewZealand&Australia"
+                                    )
+                                }
                             >
                                 紐澳
                             </NavDropdown.Item>
                         </NavDropdown>
                         <Nav.Link
                             onClick={() => {
-                                router.push("/others/taiwan");
+                                router.push("/[search]", "/taiwan");
                             }}
                             className={styles.choice}
                         >
